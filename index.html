@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <title>İstanbul</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>İstanbul</title>
+  <style>
+    .backgroundimg {
+      background-image: url(img/background.jpg);
+      background-size: cover;
+    }
+
+    .buttoncontrol:hover .buttoncontrol:onclick {
+      color: #000000;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .buttoncontrol {
+      border: none;
+      color: #000000;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .cardmarginleft {
+      margin-left: 10rem;
+    }
+  </style>
 </head>
+
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid backgroundimg">
     <div class="row">
       <div class="col-12">
         <nav class="navbar navbar-expand-lg navbar-light bg-light m-0 pl-0 pr-0">
           <h1 class="display-5">İstanbul ve Ben</h1>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>     
+          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto mt-2 ml-5">
               <li class="nav-item active">
@@ -30,22 +52,135 @@
               <li class="nav-item active">
                 <a class="nav-link" href="/Şehrim.html">Şehrim</a>
               </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="/Mirasımız.html">Mirasımız</a>
+              </li>
             </ul>
             <div class=" justify-content-lg-end" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto justify-content-lg-end mt-2">
-              <li class="nav-item active">
-                <a class="nav-link mr-2" href="/İletişim.html">İletişim</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link mr-5" href="/Login.html">Login</a>
-              </li>
+              <ul class="navbar-nav mr-auto justify-content-lg-end mt-2">
+                <li class="nav-item active">
+                  <a class="nav-link mr-2" href="/İletişim.html">İletişim</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link mr-5" href="/Login.html">Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div>
+      <div class="row">
+        <div class="col-3">
+          <div class="card ml-auto mr-auto" style="width: 100%;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Ben Burak!</h5>
+              <p class="card-text">Doğduğumdan beri İstanbulda yaşıyorum. Satranç ve Bilgisayar oyunlarını severim.
+                Yazılım ile alakalı yeni şeyler öğrenmek ilgimi çekiyor. Futbol müsabakalarını takip ederim.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-center"><a href="#Hobilerim" class="card-link">Hobilerim</a></li>
+              <li class="list-group-item text-center"><a href="#Topluluğum" class="card-link">Topluluğum</a></li>
+              <li class="list-group-item text-center"><a href="#Takımlarım" class="card-link">Fenerbahçe ve Karagümrük</a></li>
             </ul>
-         </div>
-       </div>
-     </nav>     
+          </div>
+        </div>
+        <div class="col-6">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/indeximg3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/indeximg2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/istimg.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev buttoncontrol" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next buttoncontrol" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card ml-auto mr-auto" style="width: 100%;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">İstanbul</h5>
+              <p class="card-text">Eğer dünya tek bir devletten ibaret olsaydı başkenti İstanbul olurdu. -Napoleon
+                Bonaparte</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-center">Cras justo odio</li>
+              <li class="list-group-item text-center">Dapibus ac facilisis in</li>
+              <li class="list-group-item text-center">Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="card mt-5 ml-auto mr-auto" style="width: 94%;">
+              <div class="card-body">
+                <h5 id="Hobilerim" class="card-title display-4 text-center">Hobilerim</h5>
+                <p class="card-text"> </p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, laborum est nostrum tenetur qui
+                quos quibusdam reprehenderit, quia illum natus quae autem ducimus impedit, voluptatum ipsum veniam totam
+                maiores aliquid libero. Sed blanditiis voluptatum culpa qui nulla ducimus ullam iusto, ea dolorum quis,
+                optio iste eum quam laudantium incidunt distinctio nesciunt sequi! Beatae, aut. Soluta repellendus
+                accusamus reiciendis eaque voluptatum perferendis corporis, praesentium, assumenda quisquam, amet ex
+                atque consequatur eum saepe quibusdam officia illum laboriosam culpa! Velit ipsum odio iure perferendis
+                explicabo quaerat in, sequi minus, unde natus veniam libero deleniti tempore inventore optio cupiditate
+                neque, omnis reiciendis dolorem asperiores?
+                <br />
+                <h5 id="Topluluğum" class="card-title display-4 text-center">Topluluğum</h5>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolores eaque deleniti cumque incidunt nihil
+                aperiam corporis nesciunt corrupti facilis, sint est tenetur velit minima consectetur vel dolor officia
+                quae qui dicta? Porro cum blanditiis saepe et earum repudiandae voluptate! Soluta consectetur reiciendis
+                cupiditate rem accusantium harum mollitia placeat possimus id in aliquam, illum incidunt corporis
+                repellat obcaecati perspiciatis beatae officiis voluptatibus. Incidunt esse molestias pariatur
+                laudantium soluta officia fugit vero sapiente odit libero, doloribus corrupti ut voluptatum sed sequi
+                error nihil eveniet dolorem aliquid quaerat obcaecati hic. Inventore laborum quam voluptatem reiciendis
+                harum tempore repellendus corrupti provident doloribus ratione.
+                <br />
+                <h5 id="Takımlarım" class="card-title display-4 text-center">Fenerbahçe ve Karagümrük</h5>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti libero recusandae quod adipisci rerum
+                at tempora harum. Fugit earum tempora esse labore nam ipsam quos quis perferendis nemo voluptates dolor
+                dolorem expedita velit in, quidem recusandae veniam alias repellat. Architecto ullam ad, eum delectus
+                voluptatibus, excepturi eveniet neque at asperiores necessitatibus esse alias dicta optio id quisquam,
+                pariatur quibusdam aut! Corrupti, cum. Sit esse dignissimos vel, cupiditate fuga accusantium, ipsam
+                natus amet, exercitationem labore assumenda necessitatibus? Esse doloribus perferendis similique
+                expedita odit sint architecto facilis consequatur sed consequuntur nemo dolores libero porro ut pariatur
+                eum officia fugit hic, natus saepe!
+                <br />
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item text-center">Cras justo odio</li>
+                <li class="list-group-item text-center">Dapibus ac facilisis in</li>
+                <li class="list-group-item text-center">Vestibulum at eros</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
- </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
