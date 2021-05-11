@@ -1,0 +1,35 @@
+<style>
+    .backgroundimg {
+      background-image: url(img/background.jpg);
+      background-size: cover;
+    }
+
+    .buttoncontrol:hover .buttoncontrol:onclick {
+      color: #000000;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .buttoncontrol {
+      border: none;
+      color: #000000;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .cardmarginleft {
+      margin-left: 10rem;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 10%;
+    }
+
+    .gameimg {
+      width: 15%;
+      display: block;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  </style>
