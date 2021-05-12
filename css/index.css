@@ -1,7 +1,7 @@
 
    .backgroundimg {
       background-image: url(../img/background.jpg);
-      background-size: cover;
+      background-size: auto;
     }
 
     .buttoncontrol:hover .buttoncontrol:onclick {
