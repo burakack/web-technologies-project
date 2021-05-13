@@ -161,3 +161,8 @@
     font-weight:600
   }
 }
+.backgroundimg {
+  background-image: url(../img/background.jpg);
+  background-size:auto;
+}
+
