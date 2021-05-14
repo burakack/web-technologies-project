@@ -89,21 +89,8 @@
     <div class="row">
       <div class="col-4"></div>
       <div class="col-4">
-        <div class="login-in" style="margin:auto; margin-top: 20%; margin-bottom: 30%;">
-          <br />
-          <form action="../php/login.php" method="POST" onsubmit="return giriskontrol()">
-          <h1 class=" login-h1" style="text-align: center;">Giriş</h1>
-          <input class="mt-3 mb-3 ml-5" type="text" id="email" name="email" placeholder="E-posta" require />
-          <br />
-          <input class="mt-3 mb-3 ml-5" type="password" id="password" name="password" placeholder="Şifre" require />
-          <br />
-          <button type="submit" class="btn btn-success btn-lg mb-3 mt-5">
-            Giriş
-          </button>
-          </form>
-          <br />
-        </div>
-      </div>
+          <h1 class="display-1"> BAŞARILI GİRİŞ</h1>
+          </div>
       <div class="col-4"></div>
     </div>
   </div>
@@ -140,6 +127,15 @@
       <hr>
     </div>
   </footer>
+  <?php if($_POST["email"]=="burak" && $_POST["password"]=="burak123")
+			{
+        echo("Hoşgeldin ".$_POST["email"]);
+      }
+      else{
+        echo("Kullanıcı epostası yada şifre hatalı");
+        header("refresh:2; Login.html");
+      }    
+        ?>
 </body>
 
 </html>
