@@ -60,10 +60,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto mt-2 ml-5">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Hakkında</a>
+                <a class="nav-link" href="../html/index.html">Hakkında</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="Eğitim-Bilgileri.html">Özgeçmiş</a>
+                <a class="nav-link" href="../html/Eğitim-Bilgileri.html">Özgeçmiş</a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="Şehrim.html">Şehrim</a>
@@ -87,11 +87,20 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-4"></div>
-      <div class="col-4">
-          <h1 class="display-1"> BAŞARILI GİRİŞ</h1>
+      <div class="col-12">
+          <h1> <?php if($_POST["email"]=="anon@.com" && $_POST["password"]=="123")
+			{
+        echo("Hoşgeldin ".$_POST["email"]);
+      }else if($_POST["email"]===""|| $_POST["password"]===""){
+        echo("Kullanıcı epostası yada şifreniz boş bırakılmamalıdır");
+        header("refresh:3; ../html/Login.html");
+      }
+      else{
+        echo("Kullanıcı epostası yada şifreniz hatalı geri yönlendiriliyorsunuz");
+        header("refresh:3; ../html/Login.html");
+      }    
+        ?></h1>
           </div>
-      <div class="col-4"></div>
     </div>
   </div>
   <footer class="site-footer">
@@ -127,15 +136,5 @@
       <hr>
     </div>
   </footer>
-  <?php if($_POST["email"]=="burak" && $_POST["password"]=="burak123")
-			{
-        echo("Hoşgeldin ".$_POST["email"]);
-      }
-      else{
-        echo("Kullanıcı epostası yada şifre hatalı");
-        header("refresh:2; Login.html");
-      }    
-        ?>
 </body>
-
 </html>
