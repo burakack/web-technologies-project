@@ -97,7 +97,7 @@
       }
       else{
         echo("Kullanıcı epostası yada şifreniz hatalı geri yönlendiriliyorsunuz");
-        header("refresh:3; ../html/Login.html");
+        header("refresh:3; ../Login.html");
       }    
         ?></h1>
           </div>
