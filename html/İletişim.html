@@ -17,8 +17,10 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"></script>
   <link rel="stylesheet" href="../css/İletişim.css" crossorigin="anonymous">
   </script>
+  <script src="../js/iletisim.js"></script>
   <title>İstanbul</title>
 </head>
+
 <body>
   <div class="container-fluid backgroundimg">
     <div class="row">
@@ -32,16 +34,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto mt-2 ml-5">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Hakkında</a>
+                <a class="nav-link" href="../html/index.html">Hakkında</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="Eğitim-Bilgileri.html">Özgeçmiş</a>
+                <a class="nav-link" href="../html/Eğitim-Bilgileri.html">Özgeçmiş</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="Şehrim.html">Şehrim</a>
+                <a class="nav-link" href="../html/Şehrim.html">Şehrim</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="Mirasımız.html">Mirasımız</a>
+                <a class="nav-link" href="../html/Mirasımız.html">Mirasımız</a>
               </li>
             </ul>
             <div class=" justify-content-lg-end" id="navbarSupportedContent">
@@ -50,7 +52,7 @@
                   <a class="nav-link mr-2" href="#"><span class="text-info">İletişim</span></a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link mr-5" href="Login.html">Giriş</a>
+                  <a class="nav-link mr-5" href="../html/Login.html">Giriş</a>
                 </li>
               </ul>
             </div>
@@ -58,8 +60,81 @@
         </nav>
       </div>
     </div>
-    sss
-    <footer class="site-footer">
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6">
+        <section class="mb-4">
+          <form action="../php/iletişim.php" method="POST" id="contact-form" name="contact-form" onsubmit="iletisim()">
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Bizimle İletişime Geçin!</h2>
+            <p class="text-center w-responsive mx-auto mb-5">İstek şikayet ve önerilerinizi iletebilirsiniz.</p>
+            <div class="row">
+              <div class="col-md-9 mb-md-0 mb-5">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="md-form mb-0">
+                      <input type="text" id="isim" name="isim" class="form-control">
+                      <label>Ad</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="md-form mb-0">
+                      <input type="text" id="email" name="email" class="form-control">
+                      <label>E-posta</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form mb-0">
+                      <input type="text" id="konu" name="konu" class="form-control">
+                      <label>Konu</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form">
+                      <textarea type="text" id="mesaj" name="mesaj" rows="2"
+                        class="form-control md-textarea"></textarea>
+                      <label>Mesajınız</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center text-md-left">
+                  <button type="submit" class="btn btn-primary">Gönder</button>
+                </div>
+                <div class="status"></div>
+              </div>
+              <div class="col-md-3 text-center">
+                <div class="row">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Cinsiyet</span>
+                    </div>
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <input type="radio" name="cinsiyet" value="erkek">Erkek
+                      </div>
+                      <div class="input-group-text">
+                        <input type="radio" name="cinsiyet" value="kadın">Kadın
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row mt-2">
+                  <input type="text" id="yas" name="yas" class="form-control" style="width: 25%;">
+                  <label class="ml-2 mt-1">Yaş</label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+      <div class="col-3">
+      </div>
+    </div>
+    <footer class="site-footer" style="margin-top: 10%;">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">

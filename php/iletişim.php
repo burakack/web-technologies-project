@@ -5,17 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/Login.css">
   <script src="../js/login.js"></script>
   <title>İstanbul</title>
@@ -53,8 +46,7 @@
       <div class="col-12">
         <nav class="navbar navbar-expand-lg navbar-light bg-light m-0 pl-0 pr-0">
           <h1 class="display-5">İstanbul ve Ben</h1>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -78,7 +70,7 @@
                   <a class="nav-link mr-2" href="../html/İletişim.html">İletişim</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link mr-5" href="#"><span class="text-info">Giriş</span></a>
+                  <a class="nav-link mr-5" href="../html/Login.html"><span class="text-info">Giriş</span></a>
                 </li>
               </ul>
             </div>
@@ -87,24 +79,37 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-4"></div>
-      <div class="col-4">
-        <div class="login-in" style="margin:auto; margin-top: 20%; margin-bottom: 30%;">
-          <br />
-          <form action="../php/login.php" method="POST" onsubmit="return giriskontrol()">
-            <h1 class=" login-h1" style="text-align: center;">Giriş</h1>
-            <input class="mt-3 mb-3 ml-5" type="text" id="email" name="email" placeholder="E-posta"/>
-            <br />
-            <input class="mt-3 mb-3 ml-5" type="password" id="password" name="password" placeholder="Şifre"/>
-            <br />
-            <button type="submit" class="btn btn-success btn-lg mb-3 mt-5">
-              Giriş
-            </button>
-          </form>
-          <br />
-        </div>
+      <div class="col-12">
+        <p style="text-align: center;">
+        <?php 
+        if($_POST["isim"]==""||$_POST["email"]==""||$_POST["konu"]==""||$_POST["mesaj"]==""||$_POST["cinsiyet"]==null)
+        {
+          header("refresh:3;../html/İletişim.html");
+        }
+        ?>
+        <table class="table table-hover" style="background-color: gray;">
+          <thead>
+            <tr>
+              <th>Ad</th>
+              <th>Email</th>
+              <th>Cinsiyet</th>
+              <th>Yaş</th>
+              <th>Konu</th>
+              <th>Mesaj</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><?php echo $_POST["isim"]?></td>
+              <td><?php echo $_POST["email"]?></td>
+              <td><?php echo $_POST["cinsiyet"]?></td>
+              <td><?php echo $_POST["yas"]?></td>
+              <td><?php echo $_POST["konu"]?></td>
+              <td><?php echo $_POST["mesaj"]?></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="col-4"></div>
     </div>
   </div>
   <footer class="site-footer">

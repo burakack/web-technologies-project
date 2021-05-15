@@ -66,19 +66,19 @@
                 <a class="nav-link" href="../html/Eğitim-Bilgileri.html">Özgeçmiş</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="Şehrim.html">Şehrim</a>
+                <a class="nav-link" href="../html/Şehrim.html">Şehrim</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="Mirasımız.html">Mirasımız</a>
+                <a class="nav-link" href="../html/Mirasımız.html">Mirasımız</a>
               </li>
             </ul>
             <div class=" justify-content-lg-end" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto justify-content-lg-end mt-2">
                 <li class="nav-item active">
-                  <a class="nav-link mr-2" href="İletişim.html">İletişim</a>
+                  <a class="nav-link mr-2" href="../html/İletişim.html">İletişim</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link mr-5" href="#"><span class="text-info">Giriş</span></a>
+                  <a class="nav-link mr-5" href="../html/Login.html"><span class="text-info">Giriş</span></a>
                 </li>
               </ul>
             </div>
