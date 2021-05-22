@@ -84,7 +84,7 @@
         <?php 
         if($_POST["isim"]==""||$_POST["email"]==""||$_POST["konu"]==""||$_POST["mesaj"]==""||$_POST["cinsiyet"]==null)
         {
-          header("refresh:3; ../index.html");
+          header("refresh:3; ../iletisim.html");
         }
         ?>
         <table class="table table-hover" style="background-color: gray;">

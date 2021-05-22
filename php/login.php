@@ -88,7 +88,7 @@
     </div>
     <div class="row">
       <div class="col-12">
-          <h1> <?php if($_POST["email"]=="anon@.com" && $_POST["password"]=="123")
+          <h1> <?php if($_POST["email"]=="anon@.com" && $_POST["password"]=="123456")
 			{
         echo("Hoşgeldin ".$_POST["email"]);
       }else if($_POST["email"]===""|| $_POST["password"]===""){
