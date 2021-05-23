@@ -82,7 +82,7 @@
       <div class="col-12">
         <p style="text-align: center;">
         <?php 
-        if($_POST["isim"]==""||$_POST["email"]==""||$_POST["konu"]==""||$_POST["mesaj"]==""||$_POST["cinsiyet"]==null)
+        if($_POST["isim"]==""||$_POST["email"]==""||$_POST["konu"]==""||$_POST["mesaj"]==""||$_POST["yas"]==""||$_POST["cinsiyet"]==null)
         {
           echo "LÜTFEN TÜM ALANLARI DOLDURUNUZ GERİ YÖNLENDİRİLİYORSUNUZ.";
           header("refresh:3; ../iletisim.html");

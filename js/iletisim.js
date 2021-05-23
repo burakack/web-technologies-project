@@ -1,13 +1,19 @@
-function iletisim()
-{
-    var isim = document.getElementById("isim").value;
-    var email = document.getElementById("email").value;
-    var konu = document.getElementById("konu").value;
-    var mesaj = document.getElementById("mesaj").value;
-    var cinsiyet = document.getElementById("cinsiyet").value;
-    if(isim===""||email===""||konu===""||mesaj===""||cinsiyet===null)
+function iletisim(){
+    var isim = document.getElementById("isim");
+    var email = document.getElementById("email");
+    var konu = document.getElementById("konu");
+    var mesaj = document.getElementById("mesaj");
+    var yas = document.getElementById("yas");
+    if(isim.value==""||email.value==""||konu.value==""||mesaj.value==""||yas.value=="")
     {
         alert("Bütün alanlar dolu olmalıdır!");
     }
-    alert("öylesine");
+}
+function temizle()
+{
+    isim.value="";
+    email.value="";
+    konu.value="";
+    mesaj.value="";
+    yas.value="";
 }
