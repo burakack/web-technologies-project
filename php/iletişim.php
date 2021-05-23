@@ -84,10 +84,11 @@
         <?php 
         if($_POST["isim"]==""||$_POST["email"]==""||$_POST["konu"]==""||$_POST["mesaj"]==""||$_POST["cinsiyet"]==null)
         {
+          echo "LÜTFEN TÜM ALANLARI DOLDURUNUZ GERİ YÖNLENDİRİLİYORSUNUZ.";
           header("refresh:3; ../iletisim.html");
         }
         ?>
-        <table class="table table-hover" style="background-color: gray;">
+        <table class="table table-hover" style="background-color: gray; margin-bottom:15%">
           <thead>
             <tr>
               <th>Ad</th>

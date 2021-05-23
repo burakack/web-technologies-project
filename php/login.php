@@ -60,10 +60,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto mt-2 ml-5">
               <li class="nav-item active">
-                <a class="nav-link" href="../html/index.html">Hakkında</a>
+                <a class="nav-link" href="../index.html">Hakkında</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="../html/Eğitim-Bilgileri.html">Özgeçmiş</a>
+                <a class="nav-link" href="../Eğitim-Bilgileri.html">Özgeçmiş</a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="../html/Şehrim.html">Şehrim</a>
@@ -75,10 +75,10 @@
             <div class=" justify-content-lg-end" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto justify-content-lg-end mt-2">
                 <li class="nav-item active">
-                  <a class="nav-link mr-2" href="../html/İletişim.html">İletişim</a>
+                  <a class="nav-link mr-2" href="../iletisim.html">İletişim</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link mr-5" href="../html/Login.html"><span class="text-info">Giriş</span></a>
+                  <a class="nav-link mr-5" href="../Login.html"><span class="text-info">Giriş</span></a>
                 </li>
               </ul>
             </div>
@@ -93,7 +93,7 @@
         echo("Hoşgeldin ".$_POST["email"]);
       }else if($_POST["email"]===""|| $_POST["password"]===""){
         echo("Kullanıcı epostası yada şifreniz boş bırakılmamalıdır");
-        header("refresh:3; ../html/Login.html");
+        header("refresh:3; ../Login.html");
       }
       else{
         echo("Kullanıcı epostası yada şifreniz hatalı geri yönlendiriliyorsunuz");
